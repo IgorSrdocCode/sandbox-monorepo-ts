@@ -1,0 +1,1 @@
+export { generateSyntheticData } from "./generateLogEntries";

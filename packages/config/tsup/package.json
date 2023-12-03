@@ -1,0 +1,19 @@
+{
+  "name": "@packages/tsup-config",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup index.ts --format esm,cjs --dts",
+    "dev": "tsup index.ts --format esm,cjs --watch --dts",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "@packages/tsconfig": "workspace:*",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6"
+  }
+}
